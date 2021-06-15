@@ -1,0 +1,263 @@
+.themain{
+    align-items: center;
+    display: inline-flex;
+}
+#menu {
+    background: #000000;
+    color: #FFF;
+    height: 70px;
+    border-radius: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#menu ul, #menu li {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none
+}
+#menu ul {
+    width: 100%;
+}
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+}
+.btn {
+    display: block;
+    position: relative;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 26px;
+    background: #000000;
+    text-decoration: none;
+    border-radius: 38px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn--xl {
+    width: 800px;
+    margin-top: 50px;
+    padding: 12px 200px 12px 200px;
+}
+
+.btn--sm {
+    width: 180px;
+    padding: 12px 20px 12px 20px;
+}
+
+.btn--lg {
+    width: 200px;
+    padding: 12px 20px 12px 20px;
+}
+
+.btn--xl {
+    width: 800px;
+}
+
+.btn--xl {
+    width: 800px;
+}
+
+.btn.active {
+    background-color: #ff0000;
+}
+
+.btn--xl:before,
+.btn--xl:after {
+    content: "";
+    width: 26px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    font-size: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+.btn--xl:after {
+    transform: rotate(90deg);
+    transition: all 0.3s;
+}
+
+.btn--xl.active:after {
+    transform: rotate(0deg);
+}
+
+.btn:hover {
+    text-decoration: none;
+    color:  #FFFFFF;
+    background: #FF0000;
+}
+
+.typed_btn{
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #FF0000;
+}
+
+
+#objButtons{
+    align-items: center;
+    display: table-row;
+}
+#rakurs{
+    margin-left: 20px;
+    display: inline-flex;
+}
+
+.rakurs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rakurs div {
+    position: relative;
+}
+
+.rakurs img {
+    max-width: 101px;
+    max-height: 82px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.rakurs input[type="radio"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.rakurs .radio__indicator {
+    cursor: pointer;
+}
+
+.rakurs input[type="radio"]:checked + .radio__indicator:after {
+    background-color: #FC0303;
+}
+
+.rakurs .radio__indicator:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+input[type="file"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+input[type="file"] + label {
+    display: block;
+    width: 100%;
+}
+
+input[type="file"] + label:before {
+    content: "";
+    display: block;
+    width: 99px;
+    height: 87px;
+    margin: 18px auto;
+    background-image: url("./pics/img_upload.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.btn-bg {
+    width: 47px;
+    height: 47px;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.obj-item,
+.obj-item.fittings {
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s;
+}
+
+.obj-item.active {
+    height: 130px;
+}
+
+.fittings {
+    margin: 17px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#fittings-gold {
+    background-image: url("./pics/1.2.золото.jpg");
+}
+
+#fittings-silver {
+    background-image: url("./pics/bronz1.jpg");
+}
+
+#fittings-white {
+    background-image: url("./pics/1.2.белаая.jpg");
+}
+
+#fittings-white-gold {
+    background-image: url("./pics/1.2.белоезолото.jpg");
+}
+
+#fittings-bronze {
+    background-image: url("./pics/1.2.бронзагот.jpg");
+}
+
+.public_buttons {
+    text-align: center;
+}
+
+.public_buttons-del,
+.public_buttons-clear {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transform: all  0.5s;
+}
+
+.public_buttons-del:hover,
+.public_buttons-clear:hover {
+    transform: scale(1.03);
+}
+
+.public_buttons-del {
+    min-width: 60px;
+    min-height: 66px;
+    margin-right: 45px;
+    background-image: url("./pics/icon-urn.png");
+}
+
+.public_buttons-clear {
+    background-image: url("./pics/icon-del.png");
+    min-width: 60px;
+    min-height: 59px;
+}
+
+.btn-block {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-block .btn {
+    margin: 10px 8px;
+}
